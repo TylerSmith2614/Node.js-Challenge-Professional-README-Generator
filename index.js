@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkedown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -10,6 +10,55 @@ const questions = [
     type: "input",
     name: "title",
     message: "What is the title of your application?",
+  },
+
+  {
+    type: "input",
+    name: "description",
+    message: "Please provide a short description of your project.",
+  },
+
+  {
+    type: "input",
+    name: "installation",
+    message: "What command should be used to install the application?",
+  },
+
+  {
+    type: "input",
+    name: "usage",
+    message: "What does the user need to know about using the Repo?",
+  },
+
+  {
+    type: "input",
+    name: "contributing",
+    message: "How can someone contribute to this project?",
+  },
+
+  {
+    type: "list",
+    name: "license",
+    message: "What is the license you are using for your project?",
+    choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
+  },
+
+  {
+    type: "input",
+    name: "tests",
+    message: "What command is used for running tests?",
+  },
+
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email?",
+  },
+
+  {
+    type: "input",
+    name: "github",
+    message: "What is your Github Username?",
   },
 ];
 
@@ -22,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((responses) => {
     console.log("generated ReadMe");
-    writeToFile("README.md", generateMarkedown({ ...responses }));
+    writeToFile("README.md", generateMarkdown({ ...responses }));
   });
 }
 
