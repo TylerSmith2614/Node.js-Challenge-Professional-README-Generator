@@ -10,8 +10,8 @@ https://drive.google.com/file/d/1LSIxoNDpQaNGHNLtDas37EoUsZyTiKEj/view?usp=shari
 
 ## Screenshots
 
-!(utils/Readme%20Generator%201.png)
-!(utils/Readme%20Generator%202.png)
+![Alt text](utils/Readme%20Generator%201.png)
+![Alt text](utils/Readme%20Generator%202.png)
 
 ## Note of help with source code
 
