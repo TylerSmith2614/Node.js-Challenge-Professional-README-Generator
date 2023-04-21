@@ -1,10 +1,17 @@
 # 09 Node.js Challenge: Professional README Generator
 
 ## Description
+
 This application dynamically generates a professional ReadMe using the Commandline in node.js.
 
 ## Video Demonstration of using the ReadMe Generator
+
 https://drive.google.com/file/d/1LSIxoNDpQaNGHNLtDas37EoUsZyTiKEj/view?usp=sharing
+
+## Screenshots
+
+!(utils/Readme%20Generator%201.png)
+!(utils/Readme%20Generator%202.png)
 
 ## Note of help with source code
 
