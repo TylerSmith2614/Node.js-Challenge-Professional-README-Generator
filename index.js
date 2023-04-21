@@ -77,3 +77,8 @@ function init() {
 
 // Function call to initialize app
 init();
+
+
+
+// Questions to ask: formatting, why is the readme indenting test and questions?
+// why can I not push to my repo?
