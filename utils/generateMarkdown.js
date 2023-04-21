@@ -15,9 +15,7 @@ function renderLicenseBadge(license) {
 // this link is a table o fcontents link
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `
-- [License](#license)
-`;
+    return `[License](#license)`;
   }
   return "";
 }
@@ -26,7 +24,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `## License\n This project is licensed under the ${license} license`;
+    return `License\n This project is licensed under the ${license} license`;
   }
   return "";
 }
@@ -44,7 +42,7 @@ function generateMarkdown(data) {
   - [Installation](#Installation)
   - [Usage](#usage)
   - [Contributing](#Contributing)
-  ${renderLicenseLink(data.license)}
+  - ${renderLicenseLink(data.license)}
   - [Tests](#Tests)
   - [Questions](#Questions)
 
